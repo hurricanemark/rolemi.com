@@ -15,7 +15,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "Build the Twitch JSON API",
+        "projectTitle": "Twitch JSON API",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/use-the-twitch-json-api",
         "description": "Build a Twitch JSON API",
         "objective": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/Myvqmo/.",
@@ -30,7 +30,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "Build an Image Search Abstraction Layer",
+        "projectTitle": "Image Search Abstraction Layer",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-an-image-search-abstraction-layer",
         "description": "Build a full stack JavaScript app that allows you to search for images like this: https://image-search-abstraction-layer.freecodecamp.rocks/query/lolcats%20funny?page=10 and browse recent search queries like this: https://image-search-abstraction-layer.freecodecamp.rocks/recent/. Use a site builder of your choice to complete the project.",
         "objective": "",
@@ -58,7 +58,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Simon Game",
+        "projectTitle": "Simon Game",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-simon-game",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/obYBjE.",
         "objective": "Build a Simon Game",
@@ -72,7 +72,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A freeCodeCamp Forum Homepage",
+        "projectTitle": "Forum Homepage",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-freecodecamp-forum-homepage",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/JqdoMV.",
         "objective": "Build a freeCodeCamp Forum Homepage",
@@ -86,7 +86,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Recipe Box",
+        "projectTitle": "Recipe Box",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-recipe-box",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/dNVazZ/.",
         "objective": "Build a Recipe Box",
@@ -100,7 +100,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "The Game of Life",
+        "projectTitle": "Game of Life",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-the-game-of-life",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/BpwMZv/.",
         "objective": "Build the Game of Life",
@@ -115,7 +115,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Roguelike Dungeon Crawler Game",
+        "projectTitle": "Roguelike Dungeon Crawler Game",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-roguelike-dungeon-crawler-game",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/apLXEJ/.",
         "objective": "Build a Roguelike Dungeon Crawler Game",
@@ -153,7 +153,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A National Contiguity with a Force Directed Graph",
+        "projectTitle": "National Contiguity with a Force Directed Graph",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/show-national-contiguity-with-a-force-directed-graph",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/xVopBo.",
         "objective": "Show National Contiguity with a Force Directed Graph",
@@ -196,7 +196,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Pinterest Clone",
+        "projectTitle": "Pinterest Clone",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-pinterest-clone",
         "description": "Build a Replit app that is functionally similar to this: https://build-a-pinterest-clone.freecodecamp.rocks/.",
         "objective": "Build a Pinterest Clone",
@@ -213,7 +213,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Nightlife Coordination App",
+        "projectTitle": "Nightlife Coordination App",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-nightlife-coordination-app",
         "description": "Build a full stack JavaScript app that is functionally similar to this: https://yoyo44.herokuapp.com/. Use a site builder of your choice to complete the project.",
         "objective": "Build a Nightlife Coordination App",
@@ -243,7 +243,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Voting App",
+        "projectTitle": "Voting App",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-voting-app",
         "description": "Build a full stack JavaScript app that is functionally similar to this: https://voting-app.freecodecamp.rocks/. Use a site builder of your choice to complete the project.",
         "objective": "Build a Voting App",
@@ -262,7 +262,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Pong Game",
+        "projectTitle": "Pong Game",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-pong-game",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/satyamdev/full/pdMmBp.",
         "objective": "Build a Pong Game",
@@ -277,7 +277,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "A Light-Bright App",
+        "projectTitle": "Light-Bright App",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-light-bright-app",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/eyLYXE.",
         "objective": "Build a Light-Bright App",
