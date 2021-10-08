@@ -4,17 +4,11 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0px;
+    padding: 20px 0px 0px 0px;
+    overflow: hidden; /* overflow: hidden prevents full scrollbar in IE */
   }
   
-  /* Style the header */
-  header {
-    background-color: #abf;
-    padding: 5px;
-    text-align: center;
-    font-size: 30px;
-    color: rgba(159, 231, 220, 0.548);
-  }
   h5 {
     font-size: 20px;
     color: #aadadfff;
@@ -27,7 +21,7 @@
   nav {
     float: left;
     width: 20%;
-    height: auto; /* only for demonstration, should be removed */
+    /*height: auto; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
   }
@@ -73,10 +67,12 @@ hr {
 /* Add a black background color to the top navigation */
 .top {
     background-color: #abf;
-    padding: 5px 0px 0px 5px;
+    padding: 0%;
     text-align: center;
-    font-size: 30px;
-    color: rgba(203, 248, 78, 0.867);
+    font-size: 17px;
+    color: rgba(75, 79, 124, 0.867);
+        /* you must include "div" for IE */
+        overflow: hidden;
   }
 
 .bottom {
@@ -185,6 +181,7 @@ hr {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
+      left:0;
       right: 0;
       top: 0;
     }
@@ -253,6 +250,56 @@ hr {
     padding: 10px;
     text-align: center;
   }
+
+
+
+  /* striped banner */
+  :root {
+    --background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+    --first: #53f;
+    --second: #4553ff;
+    --third: #4f40ff;
+    --fourth: #25ddf5;
+    --fifth: #1fa2ff;
+  }
+  #stripes {
+    width: 100%;
+    height: 1vw;
+    background: var(--background);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+    transform: skewY(-0deg);
+    transform-origin: 0;
+  }
+  
+  #stripes span:nth-child(1) {
+    grid-column: span 1;
+    background: var(--first);
+  }
+  
+  #stripes span:nth-child(2) {
+    grid-column: span 2;
+    background: var(--second);
+  }
+  
+  #stripes span:nth-child(3) {
+    grid-column: span 2;
+    background: var(--third);
+  }
+  
+  #stripes span:nth-child(4) {
+    grid-column: 6;
+    grid-row: 3;
+    background: var(--fourth);
+  }
+  
+  #stripes span:nth-child(5) {
+    grid-column: span 2;
+    grid-row: 4;
+    background: var(--fifth);
+  } 
 
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
   @media (max-width: 600px) {
