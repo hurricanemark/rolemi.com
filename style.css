@@ -59,7 +59,7 @@
 
 
 hr {
-    color: silver;
+    color: #c7c2c2;
     padding: 0%;
 }
 .space { margin-top: 90px; }
@@ -70,7 +70,7 @@ hr {
     padding: 0%;
     text-align: center;
     font-size: 17px;
-    color: rgba(75, 79, 124, 0.867);
+    color: rgba(84, 84, 112, 0.867);
     /* you must include "div" for IE */
     overflow: hidden;
   }
@@ -245,7 +245,7 @@ hr {
   /* Middle column */
   .column.middle {
     width: 70%;
-    background: rgb(29, 46, 54);
+    background: #82878a;
     color:rgb(208, 233, 240);
     padding-left: 2px;
     padding-right: 2px;
