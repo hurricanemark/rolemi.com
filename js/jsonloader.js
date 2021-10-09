@@ -17,16 +17,16 @@ function getProjectDetail(projTitle){
       if (data[i].projectTitle === projTitle) {
         segmentHTML = '';
         segmentHTML = '<ul><strong>Project# ' + i
-                  + '</strong></ul><li>Title: <span style="color:#FF00AA">' + data[i].projectTitle + '</span><br />'
-                  + '</li><li>URL: ' + data[i].projectUrl + '<br />'
-                  + '</li><li>Catgories: ' + data[i].categories + '<br />'
-                  + '</li><li>Description: ' + data[i].description + '<br />'
-                  + '</li><li>Objective: ' + data[i].objective + '<br />'
-                  + '</li><li>User story: ' + data[i].userStory + '<br /'
-                  + '</li><li>Hints: ' + data[i].hints + '</br />'
-                  + '</li><li>Notes: ' + data[i].notes + '<br />'
-                  + '</li><li>Status: ' + data[i].status + '<br />'
-                  + '</li><li>Developers: ' + data[i].engineers + '</li>';
+                  + '</strong></ul><font face="arial" color="#DDAA42">Title</font>: <span style="color:#FF00AA">' + data[i].projectTitle + '</span><br /><br />'
+                  + '<font face="arial" color="#8ebf42">URL:</font> ' + data[i].projectUrl + '<br />'
+                  + '<font face="arial" color="#8ebf42">Catgories:</font> ' + data[i].categories + '<br />'
+                  + '<font face="arial" color="#8ebf42">Description:</font> ' + data[i].description + '<br />'
+                  + '<font face="arial" color="#8ebf42">Objective:</font> ' + data[i].objective + '<br />'
+                  + '<font face="arial" color="#8ebf42">User story:</font> ' + data[i].userStory + '<br />'
+                  + '<font face="arial" color="#8ebf42">Hints:</font> ' + data[i].hints + '</br />'
+                  + '<font face="arial" color="#8ebf42">Notes:</font> ' + data[i].notes + '<br />'
+                  + '<font face="arial" color="#8ebf42">Status:</font> ' + data[i].status + '<br />'
+                  + '<font face="arial" color="#8ebf42">Developers:</font> ' + data[i].engineers;
                   
       }
       if (segmentHTML !== "") {
