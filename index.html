@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="card_carousel.css">
+    <script src="js/jsonloader.js"></script>
 </head> 
 <body>
 
@@ -31,32 +32,30 @@
         <div class="dropdown">
             <button class="dropbtn">Products<i class="fa fa-caret-down"></i></button>
             <div class="dropdown-content">
-              <a href="https://www.aesclever.com/pages/current/tcpip.htm" target="display-frame">CleverView TCPIP</a>
-              <a href="https://www.aesclever.com/pages/current/ids.htm" target="display-frame">Clever IDS</a>
-              <a href="https://www.aesclever.com/pages/current/dns.htm" target="display-frame">CleverView DNS</a>
-              <a href="https://www.aesclever.com/pages/current/decoder.htm" target="display-frame">Clever Decoder</a>
-              <a href="https://www.aesclever.com/pages/current/ctrace.htm" target="display-frame">CleverView cTrace Analysis</a>
+              <a href="https://www.aesclever.com/pages/current/tcpip.htm" target="prject-detail">CleverView TCPIP</a>
+              <a href="https://www.aesclever.com/pages/current/ids.htm" target="prject-detail">Clever IDS</a>
+              <a href="https://www.aesclever.com/pages/current/dns.htm" target="prject-detail">CleverView DNS</a>
+              <a href="https://www.aesclever.com/pages/current/decoder.htm" target="prject-detail">Clever Decoder</a>
+              <a href="https://www.aesclever.com/pages/current/ctrace.htm" target="prject-detail">CleverView cTrace Analysis</a>
             </div>
           </div>
 
-        <a href="https://www.linkedin.com/in/marknltv" target="display-frame">Profile</a>
-        <a href="https://github.com/hurricanemark" target="display-frame">About</a>
+        <a href="https://www.linkedin.com/in/marknltv" target="prject-detail">Profile</a>
+        <a href="https://github.com/hurricanemark" target="prject-detail">About</a>
     </div>  
 </div>
 
 <div class="row">
   <div class="column side">
     <h2>Projects</h2>
-    <ul>
+    <ul id="project_list">
         <li><a href="#">Wicki Search</a></li>
-        <li><a href="https://codepen.io/hurricanemark/pen/jOmddGx" target="display-frame">Local Weather</a></li>
-        <li><a href="#">Still Squeezing</a></li>
-        <li><a href="#">Twitchign JSON API</a></li>
+        <li><a href="https://codepen.io/hurricanemark/pen/jOmddGx" target="prject-detail">Local Weather</a></li>
+        <li><a href="#">Twitch JSON API</a></li>
         <li><a href="#">Image Search Abstraction Layer</a></li>
         <li><a href="#">Tic Tac Toe</a></li>
         <li><a href="#">Simon Game</a></li>
-        <li><a href="#">Forum Homepage</a></li>
-        
+        <li><a href="#">Forum Homepage</a></li>  
         <li><a href="#">Recipe Box</a></li>
         <li><a href="#">Game of Life</a></li>
         <li><a href="#">Roguelike Dungeon Crawler Game</a></li>
@@ -71,16 +70,20 @@
         <li><a href="#">Pong Game</a></li>
         <li><a href="#">Light-Bright App</a></li>
     </ul>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("ul[id*=project_list] li").click(function () {
+                // alert($(this).text());
+                getProjectDetail($(this).text());                
+            });
+        });
+    </script>
    </div>
   
   <div class="column middle">
-    <iframe name="display-frame" style="width:100%;height:549px;border:0px solid #4e46e5;" id="dumpingground"></iframe>
-    
-    <article id="prj_view">
-        <h5 id="prj_name">Wikipedia Viewer</h5>
-        <p>You can search Wikipedia entries in a search box and see the resulting Wikipedia entries.  You can click a button to see a random Wikipedia entry.</p>
-    </article>
-    
+    <!-- <iframe name="display-frame" style="width:100%;height:549px;border:0px solid #4e46e5;" id="prject-detail"></iframe> -->
+    <div id="prject-detail" style="background-color: aquamarine;"></div>
   </div>
   
   <div class="column side">
@@ -145,7 +148,7 @@
 
         <div class="card">
             <h2>Join Us &#x1F91D;</h2>
-            <div class="fakeimg" style="height:100px;">Image &#x1F575;</div>
+            <div class="fakimg" style="height:100px;">Image &#x1F575;</div>
             <p>Father: Marco.  Son: Rolly  Daughter: Emi</p>
         </div>
         <div class="card">

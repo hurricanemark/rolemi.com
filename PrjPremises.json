@@ -44,7 +44,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "Tic Tac Toe Game",
+        "projectTitle": "Tic Tac Toe",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-tic-tac-toe-game",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/KzXQgy/.",
         "objective": "Build a Tic Tac Toe Game",
@@ -132,7 +132,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "P2P Video Chat Application",
+        "projectTitle": "P2P Video Chat",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/p2p-video-chat-application",
         "description": "Build a Replit app that is functionally similar to this: https://p2p-video-chat-application.freecodecamp.rocks/.",
         "objective": "Build a P2P Video Chat Application",
@@ -181,7 +181,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "Manage a Book Trading Club",
+        "projectTitle": "Manage Book Trading Club",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/manage-a-book-trading-club",
         "description": "Build a Replit app that is functionally similar to this: https://manage-a-book-trading-club.freecodecamp.rocks/.",
         "objective": "Manage a Book Trading Club",

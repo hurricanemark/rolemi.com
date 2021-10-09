@@ -1,48 +1,40 @@
-// //import { readFileSync } from 'fs';
-// const datafile = require("../static/PrjPremises.json");
-// const fs = require('fs');
-// let rawdata = fs.readFile(datafile);
-// let prjAssignments = JSON.parse(rawdata);
-// const obj = JSON.parse(rawdata, function (key, value) {
-//     if (key == "projectTitle" && value == 'A National Contiguity with a Force Directed Graph') {
-//         const outstr = key + '=' + value;
-//       console.log(value);
-//     } 
-    
-// });
-// for (let i = 0; i < prjAssignments.length; i++) {
-//     console.log(prjAssignments[i].projectTitle);
-//     const x = "";
-//     for (let j in prjAssignments.userStory) {
-//         x += prjAssignments.story[j];
-//     }
-//     console.log(x);
-// }
-
-// console.log(prjAssignments[2].projectTitle);
-
-
-
-
-const fs = require("fs");
-function jsonReader(filePath, cb) {
-  fs.readFile(filePath, (err, fileData) => {
-    if (err) {
-      return cb && cb(err);
+function getProjectDetail(projTitle){
+  fetch('../PrjPremises.json')
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data){
+      appendData(data);
+    })
+    .catch(function (err){
+      console.log('error: ' + err);
+    });
+  function appendData(data) {
+    var mainContainer = document.getElementById("prject-detail");
+    for (var i=0; i < data.length; i++) {
+      var iframediv = document.createElement("div");
+      var segmentHTML = "";
+      if (data[i].projectTitle === projTitle) {
+        segmentHTML = '';
+        segmentHTML = '<ul><strong>Project# ' + i
+                  + '</strong></ul><li>Title: <span style="color:#FF0000">' + data[i].projectTitle + '</span><br />'
+                  + '</li><li>URL: ' + data[i].projectUrl + '<br />'
+                  + '</li><li>Catgories: ' + data[i].categories + '<br />'
+                  + '</li><li>Description: ' + data[i].description + '<br />'
+                  + '</li><li>Objective: ' + data[i].objective + '<br />'
+                  + '</li><li>User story: ' + data[i].userStory + '<br /'
+                  + '</li><li>Hints: ' + data[i].hints + '</br />'
+                  + '</li><li>Notes: ' + data[i].notes + '<br />'
+                  + '</li><li>Status: ' + data[i].status + '<br />'
+                  + '</li><li>Developers: ' + data[i].engineers + '</li>';
+                  
+      }
+      if (segmentHTML !== "") {
+        document.getElementById("prject-detail").innerHTML = "";
+        iframediv.innerHTML =segmentHTML;
+        mainContainer.appendChild(iframediv);
+      }
     }
-    try {
-      const object = JSON.parse(fileData);
-      return cb && cb(null, object);
-    } catch (err) {
-      return cb && cb(err);
-    }
-  });
-}
-
-jsonReader("../static/PrjPremises.json", (err, project) => {
-  if (err) {
-    console.log(err);
-    return;
   }
-  console.log(project[0]); 
-});
+}
+getProjectDetail();
