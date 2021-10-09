@@ -1,5 +1,5 @@
 function getProjectDetail(projTitle){
-  fetch('../PrjPremises.json')
+  fetch('/../PrjPremises.json')
     .then(function (response) {
       return response.json();
     })
