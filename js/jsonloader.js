@@ -1,5 +1,5 @@
 function getProjectDetail(projTitle){
-  fetch("../static/PrjPremises.json")
+  fetch("https://hurricanemark.github.io/TakehomeProjects/static/PrjPremises.json")
       .then(function (response) {
       return response.json();
     })
