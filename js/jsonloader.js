@@ -17,7 +17,7 @@ function getProjectDetail(projTitle){
       if (data[i].projectTitle === projTitle) {
         segmentHTML = '';
         segmentHTML = '<ul><strong>Project# ' + i
-                  + '</strong></ul><li>Title: <span style="color:#FF0000">' + data[i].projectTitle + '</span><br />'
+                  + '</strong></ul><li>Title: <span style="color:#FF00AA">' + data[i].projectTitle + '</span><br />'
                   + '</li><li>URL: ' + data[i].projectUrl + '<br />'
                   + '</li><li>Catgories: ' + data[i].categories + '<br />'
                   + '</li><li>Description: ' + data[i].description + '<br />'
