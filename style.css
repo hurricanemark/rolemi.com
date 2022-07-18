@@ -4,11 +4,17 @@
   
   body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px 0px 0px 0px;
-    overflow: hidden; /* overflow: hidden prevents full scrollbar in IE */
+    margin: 0;
   }
   
+  /* Style the header */
+  header {
+    background-color: #abf;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: rgba(159, 231, 220, 0.548);
+  }
   h5 {
     font-size: 20px;
     color: #aadadfff;
@@ -21,10 +27,18 @@
   nav {
     float: left;
     width: 20%;
-    /*height: auto; /* only for demonstration, should be removed */
+    height: auto; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
   }
+  .fixednav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.staticnav {
+  position: static;
+}
   
   /* Style the list inside the menu */
   nav ul {
@@ -59,20 +73,38 @@
 
 
 hr {
-    color: #c7c2c2;
+    color: silver;
     padding: 0%;
 }
 .space { margin-top: 90px; }
 
+
+/* IFRAME PLACEHOLDER */
+#display-frame {
+  padding: 0px;
+  background-color: #ccc;
+  display: inline-flexbox;
+}
+#display-frame > iframe {
+  width: 100%;
+  height: 560px;
+}
+#display-frame > div {
+  margin: auto;
+}
+/* -- END IFRAME PLACEHOLDER -- */
+
+
 /* Add a black background color to the top navigation */
 .top {
     background-color: #abf;
-    padding: 0%;
+    padding: 5px 0px 0px 5px;
     text-align: center;
-    font-size: 17px;
-    color: rgba(84, 84, 112, 0.867);
-    /* you must include "div" for IE */
-    overflow: hidden;
+    font-size: 30px;
+    color: rgba(203, 248, 78, 0.867);
+    /*position: fixed;*/
+    top: 0;
+    left: 0;
   }
 
 .bottom {
@@ -86,7 +118,12 @@ hr {
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+
   
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -165,16 +202,6 @@ hr {
     display: block;
   }
   
-
-  ul {
-    list-style-type: none;
-    color:#999999;
-  }
-  ul li:before {
-    content: '\2014';
-    position: absolute;
-    margin-left: -20px;
-  }
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -191,7 +218,6 @@ hr {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
-      left:0;
       right: 0;
       top: 0;
     }
@@ -219,15 +245,6 @@ hr {
     padding-bottom: 0px;
     background: rgb(208, 233, 240);
   }
-  .columnn.ul {
-    list-style-type: none;
-    color:#999999;
-  }
-  .columnn.ul li:before {
-    content: '\2014';
-    position: absolute;
-    margin-left: -20px;
-  }
   
   /* Left and right column */
   .column.side {
@@ -239,22 +256,29 @@ hr {
     padding-top: 0%;
     padding-bottom: 0px;
     overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
     border: 1px solid #ccc;
   }
   
   /* Middle column */
   .column.middle {
     width: 70%;
-    background: #82878a;
-    color:rgb(208, 233, 240);
+    background: rgb(82, 79, 79);
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 0%;
     padding-bottom: 0px;
     overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
     border: 0.5px solid #ccc;
   }
+
   
+a:hover {
+  color: green;
+}
 
   /* Clear floats after the columns */
 .row:after {
@@ -271,56 +295,6 @@ hr {
     text-align: center;
   }
 
-
-
-  /* striped banner */
-  :root {
-    --background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
-    --first: #53f;
-    --second: #4553ff;
-    --third: #4f40ff;
-    --fourth: #25ddf5;
-    --fifth: #1fa2ff;
-  }
-  #stripes {
-    width: 100%;
-    height: 1vw;
-    background: var(--background);
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    
-    transform: skewY(-0deg);
-    transform-origin: 0;
-  }
-  
-  #stripes span:nth-child(1) {
-    grid-column: span 1;
-    background: var(--first);
-  }
-  
-  #stripes span:nth-child(2) {
-    grid-column: span 2;
-    background: var(--second);
-  }
-  
-  #stripes span:nth-child(3) {
-    grid-column: span 2;
-    background: var(--third);
-  }
-  
-  #stripes span:nth-child(4) {
-    grid-column: 6;
-    grid-row: 3;
-    background: var(--fourth);
-  }
-  
-  #stripes span:nth-child(5) {
-    grid-column: span 2;
-    grid-row: 4;
-    background: var(--fifth);
-  } 
-
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
   @media (max-width: 600px) {
     nav, article {
@@ -329,7 +303,7 @@ hr {
     }
     .column.side, .column.middle {
         width: 100%;
-      }
+    }
   
   }
   
