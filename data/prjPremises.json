@@ -15,6 +15,19 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
+        "projectTitle": "Local Weather",
+        "projectUrl": "https://codepen.io/hurricanemark/pen/jOmddGx",
+        "description": "Build a Local Weather Report",
+        "objective": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/hurricanemark/pen/jOmddGx.",
+        "userStory": ["Use geolocation api to determin longitude and latitude values.",
+                        "Handle exceptions."],
+        "hints": ["Convert units appropriate to geo location."],
+        "note": "",
+        "status": "PRE-PLAN",
+        "engineers": ["Mark Nguyen"],
+        "categories": ["Open Source", "freecodecamp.org"]
+    },
+    {
         "projectTitle": "Twitch JSON API",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/use-the-twitch-json-api",
         "description": "Build a Twitch JSON API",
@@ -44,7 +57,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "Tic Tac Toe Game",
+        "projectTitle": "Tic Tac Toe",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-a-tic-tac-toe-game",
         "description": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/KzXQgy/.",
         "objective": "Build a Tic Tac Toe Game",
@@ -132,7 +145,7 @@
         "categories": ["Open Source", "freecodecamp.org"]
     },
     {
-        "projectTitle": "P2P Video Chat Application",
+        "projectTitle": "P2P Video Chat",
         "projectUrl": "https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/p2p-video-chat-application",
         "description": "Build a Replit app that is functionally similar to this: https://p2p-video-chat-application.freecodecamp.rocks/.",
         "objective": "Build a P2P Video Chat Application",

@@ -5,14 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <!-- Load an icon library to show a menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="card_carousel.css">
-</head> 
-<body>
+    <link rel="treemenu" href="treemenu.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
-<div class="top">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./js/jsonLoader.js"></script>
+
+</head> 
+<body onload="getProjectDetail('Wicki Search');">
+
     <h2>The Maddening Stir fried Code Makers &trade;</h2>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
@@ -22,13 +28,13 @@
         <a href="#gitlab">Gitlab</a>
         <a href="#mentor">Mentor</a>
         <div class="dropdown">
-            <button class="dropbtn">Products<i class="fa fa-caret-down"></i></button>
+            <button class="dropbtn">Products<em class="fa fa-caret-down"></em></button>
             <div class="dropdown-content">
-              <a href="https://www.aesclever.com/pages/current/tcpip.htm" target="display-frame">CleverView TCPIP</a>
-              <a href="https://www.aesclever.com/pages/current/ids.htm" target="display-frame">Clever IDS</a>
-              <a href="https://www.aesclever.com/pages/current/dns.htm" target="display-frame">CleverView DNS</a>
-              <a href="https://www.aesclever.com/pages/current/decoder.htm" target="display-frame">Clever Decoder</a>
-              <a href="https://www.aesclever.com/pages/current/ctrace.htm" target="display-frame">CleverView cTrace Analysis</a>
+              <a href="https://new.aesclever.com/cleverview-for-tcp-ip/" target="display-frame">CleverView TCPIP</a>
+              <a href="https://new.aesclever.com/cleverview-for-tcp-ip-on-linux/" target="display-frame">Clever IDS</a>
+              <a href="https://new.aesclever.com/cleverdetect-for-dns/" target="display-frame">CLEVERDetect DNS</a>
+              <a href="https://new.aesclever.com/clever-decoder/" target="display-frame">Clever Decoder</a>
+              <a href="https://new.aesclever.com/cleverview-for-ctrace-analysis/" target="display-frame">CleverView cTrace Analysis</a>
             </div>
           </div>
 
@@ -38,53 +44,60 @@
 </div>
 
 <div class="row">
-  <div class="column side">
+  <div class="column side" id="leftcolumn">
     <h2>Projects</h2>
-    <ul>
-        <li><a href="#">Wicki Search</a></li>
-        <li><a href="https://codepen.io/hurricanemark/pen/jOmddGx" target="display-frame">Local Weather</a></li>
-        <li><a href="#">Still Squeezing</a></li>
-        <li><a href="#">Twitchign JSON API</a></li>
-        <li><a href="#">Image Search Abstraction Layer</a></li>
-        <li><a href="#">Tic Tac Toe</a></li>
-        <li><a href="#">Simon Game</a></li>
-        <li><a href="#">Forum Homepage</a></li>
-        
-        <li><a href="#">Recipe Box</a></li>
-        <li><a href="#">Game of Life</a></li>
-        <li><a href="#">Roguelike Dungeon Crawler Game</a></li>
-        <li><a href="#">P2P Video Chat</a></li>
-        <li><a href="#">National Contiguity with a Force Directed Graph</a></li>
-        <li><a href="#">Map Data Across the Globe</a></li>
-        <li><a href="#">Manage Book Trading Club</a></li>
-        <li><a href="#">Pinterest Clone</a></li>
-        <li><a href="#">Nightfife Coordination App</a></li>
-        <li><a href="#">Chart the Stock Market</a></li>
-        <li><a href="#">Voting App</a></li>
-        <li><a href="#">Pong Game</a></li>
-        <li><a href="#">Light-Bright App</a></li>
+    <ul class="projlist" id="project_list">
+        <li><a title="Wicki Search" href="#">Wicki Search</a></li>
+        <li class="selected"><a title="Local Weather" href="https://codepen.io/hurricanemark/pen/jOmddGx" target="display-frame">Local Weather</a></li>
+        <li><a href="#">Twitch JSON API</a></li>
+        <li><a title="Image Search Abstraction Layer" href="#">Image Search Abstraction Layer</a></li>
+        <li><a title="Tic Tac Toe" href="#">Tic Tac Toe</a></li>
+        <li><a title="Simon Game" href="#">Simon Game</a></li>
+        <li><a title="Forum Homepage" href="#">Forum Homepage</a></li>
+        <li><a title="Recipe Box" href="#">Recipe Box</a></li>
+        <li><a title="Game of Life" href="#">Game of Life</a></li>
+        <li><a title="Roguelike Dungeon Crawler Game" href="#">Roguelike Dungeon Crawler Game</a></li>
+        <li><a title="P2P Video Chat" href="#">P2P Video Chat</a></li>
+        <li><a title="National Contiguity with a Force Directed Graph" href="#">National Contiguity with a Force Directed Graph</a></li>
+        <li><a title="Map Data Across the Globe" href="#">Map Data Across the Globe</a></li>
+        <li><a title="Manage Book Trading Club" href="#">Manage Book Trading Club</a></li>
+        <li><a title="Pinterest Clone" href="#">Pinterest Clone</a></li>
+        <li><a title="Nightfife Coordination App" href="#">Nightfife Coordination App</a></li>
+        <li><a title="Chart the Stock Market" href="#">Chart the Stock Market</a></li>
+        <li><a title="Voting App" href="#">Voting App</a></li>
+        <li><a title="Pong Game" href="#">Pong Game</a></li>
+        <li><a title="Light-Bright App" href="#">Light-Bright App</a></li>
     </ul>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // $("ul[id*=project_list] li").click(function () { 
+            $("ul.projlist").on("click", "a", function(e) {
+                e.preventDefault();
+                //alert(thistext); // gets text contents of clicked li 
+                //alert($(this).text()); // gets innerHTML of clicked li
+                getProjectDetail($(this).text());
+            });
+        });
+    </script>
    </div>
   
-  <div class="column middle">
-    <iframe name="display-frame" style="width:100%;height:549px;border:0px solid #4e46e5;" id="dumpingground"></iframe>
-    
-    <article id="prj_view">
-        <h5 id="prj_name">Wikipedia Viewer</h5>
-        <p>You can search Wikipedia entries in a search box and see the resulting Wikipedia entries.  You can click a button to see a random Wikipedia entry.</p>
-    </article>
-    
+   <!-- MIDDLE COLUMN -->
+  <div class="column middle" id="middlecolumn">
+    <div id="prject-detail" style="background-color: rgb(195, 217, 232);"></div>  
   </div>
   
-  <div class="column side">
+
+  <!-- RIGHT COLUMN -->
+  <div class="column side" id="rightcolumn">
     <div class="rightcolumn">
         <div class="wrapper">
             <div class="outer">
                 <div class="card" style="--delay:-1;">
                     <div class="content">
-                    <div class="img"><img src="static/sun.jpg" alt=""></div>
+                    <div class="img"><img src="static/sun.jpg" alt="" ></div>
                     <div class="details">
-                        <span class="name">&#x1F432;Goldie Horn</span>
+                        <span class="name">&#x1F432;Japan</span>
                     </div>
                     </div>
                     <a href="#">Follow</a>
@@ -93,7 +106,7 @@
                     <div class="content">
                     <div class="img"><img src="static/wood.jpg" alt=""></div>
                     <div class="details">
-                        <span class="name">&#129409;Boomba</span>
+                        <span class="name">&#129409;Northwest</span>
                     </div>
                     </div>
                     <a href="#">Follow</a>
@@ -102,7 +115,7 @@
                     <div class="content">
                     <div class="img"><img src="static/snow.jpg" alt=""></div>
                     <div class="details">
-                        <span class="name">&#x1F433;Jonas</span>
+                        <span class="name">&#x1F433;Alaska</span>
                     </div>
                     </div>
                     <a href="#">Follow</a>
@@ -111,7 +124,7 @@
                     <div class="content">
                     <div class="img"><img src="static/water.jpg" alt=""></div>
                     <div class="details">
-                        <span class="name">&#x1F435;Marco</span>
+                        <span class="name">&#x1F435;Ninh Bình</span>
                     </div>
                     </div>
                     <a href="#">Follow</a>
@@ -121,7 +134,7 @@
     
 
         <div class="card">
-            <h3>Team Highlights</h3>
+            <h3>Travel dreams</h3>
             <div class="space"></div>
         </div>
 

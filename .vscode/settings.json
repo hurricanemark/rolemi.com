@@ -1,3 +1,9 @@
 {
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6"
+      },
+      "include": ["static/*", "data/*"],
+      "exclude": "node_modules",
     "liveServer.settings.port": 5501
 }

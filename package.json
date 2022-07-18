@@ -1,0 +1,27 @@
+{
+  "name": "takehomeprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "modulejs": "^2.9.0",
+    "node-fetch": "^3.0.0",
+    "nodejs": "^0.0.0",
+    "uniq": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hurricanemark/TakehomeProjects.git"
+  },
+  "author": "Mark Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hurricanemark/TakehomeProjects/issues"
+  },
+  "homepage": "https://github.com/hurricanemark/TakehomeProjects#readme"
+}
