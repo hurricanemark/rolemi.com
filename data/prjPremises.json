@@ -10,7 +10,7 @@
                 "Here's an entry on using Wikipedia's API: https://www.mediawiki.org/wiki/API:Main_page.",
                 "Use this link to experiment with Wikipedia's API."],
         "note": "",
-        "status": "PRE-PLAN",
+        "status": "WIP",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
     },
@@ -22,8 +22,8 @@
         "userStory": ["Use geolocation api to determin longitude and latitude values.",
                         "Handle exceptions."],
         "hints": ["Convert units appropriate to geo location."],
-        "note": "",
-        "status": "PRE-PLAN",
+        "note": ["Available in github page: https://hurricanemark.github.io/LocalWeather/"],
+        "status": "COMPLETED",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
     },

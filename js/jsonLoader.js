@@ -26,7 +26,7 @@ function getProjectDetail(titleName){
                             + '</li><li>objective: ' + data[i].objective + '<br \>'
                             + '</li><li>UserStory: ' + data[i].userStory  + '<br \>'
                             + '</li><li>Hints: ' + data[i].hints + '<br \>'
-                            + '</li><li>notes: ' + data[i].notes  + '<br \>'
+                            + '</li><li>notes: ' + data[i].note  + '<br \>'
                             + '</li><li>status: ' + data[i].status + '<br \>'
                             + '</li><li>engineers: ' + data[i].engineers  + '<br \>'
                             + '</li><li>categories: ' + data[i].categories + '</li>';
