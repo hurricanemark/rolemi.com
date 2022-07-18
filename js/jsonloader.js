@@ -1,4 +1,4 @@
-var fetch = require('fetch').node_fetch;
+var fetch = require('node_fetch');
 /* ----- */
 function getProjectDetail(titleName){
 
