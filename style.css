@@ -78,6 +78,21 @@ hr {
 }
 .space { margin-top: 90px; }
 
+ul {
+  /* list-style-type: none; */
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+  content: none;
+}
+ul.dashed > li {
+  text-indent: -20px;
+}
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -20px;
+}
 
 /* IFRAME PLACEHOLDER */
 #display-frame {

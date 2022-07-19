@@ -21,18 +21,17 @@ function getProjectDetailPureJS(titleName){
             let segmentHTML = "";
             // alert(data[i].demo);
             if (data[i].projectTitle === titleName) {
-                segmentHTML = '<ul><strong>Project# ' + i 
-                            + '</strong></ul><li>projectTitle: <span style="color:#ff00AA">' + data[i].projectTitle + '</span><br \>'
-                            + '</li><li>projectUrl: ' + data[i].projectUrl + '<br \>'
-                            + '</li><li>description: ' + data[i].description  + '<br \>'
-                            + '</li><li>objective: ' + data[i].objective + '<br \>'
-                            + '</li><li>UserStory: ' + data[i].userStory  + '<br \>'
-                            + '</li><li>Hints: ' + data[i].hints + '<br \>'
-                            + '</li><li>notes: ' + data[i].note  + '<br \>'
-                            + '</li><li>demo: ' + data[i].demo  + '<br \>'
-                            + '</li><li>status: ' + data[i].status + '<br \>'
-                            + '</li><li>engineers: ' + data[i].engineers  + '<br \>'
-                            + '</li><li>categories: ' + data[i].categories + '</li>';
+                segmentHTML = '<br \><ul class="dashed"><span style="color:green"><em>' + data[i].projectTitle + '</em></span></ul>&emsp;&emsp; <hr><br \>'
+                            + '&emsp; &#8211; Project Url: ' + data[i].projectUrl + '<br \>'
+                            + '&emsp; &#8211; Description: ' + data[i].description  + '<br \>'
+                            + '&emsp; &#8211; Objective: ' + data[i].objective + '<br \>'
+                            + '&emsp; &#8211; UserStory: ' + data[i].userStory  + '<br \>'
+                            + '&emsp; &#8211; Hints: ' + data[i].hints + '<br \>'
+                            + '&emsp; &#8211; Notes: ' + data[i].note  + '<br \>'
+                            + '&emsp; &#8211; Status: ' + data[i].status + '<br \>'
+                            + '&emsp; &#8211; Engineers: ' + data[i].engineers  + '<br \>'
+                            + '&emsp; &#8211; Categories: ' + data[i].categories + '</br \><br \>'
+                            + '&emsp; &#8211; Demo: ' + data[i].demo  + '<br \></li>';
             }
             if (segmentHTML !== "") {
                 //console.log(segmentHTML);
@@ -44,5 +43,19 @@ function getProjectDetailPureJS(titleName){
     }
 }
 
+/*
+                segmentHTML = '<ul class="dashed"><strong>Project# ' + i 
+                            + '</strong></ul><li>&#8211; Project Title: <span style="color:#ff00AA">' + data[i].projectTitle + '</span><br \>'
+                            + '&#8211; Project Url: ' + data[i].projectUrl + '<br \>'
+                            + '&#8211; Description: ' + data[i].description  + '<br \>'
+                            + '&#8211; Objective: ' + data[i].objective + '<br \>'
+                            + '&#8211; UserStory: ' + data[i].userStory  + '<br \>'
+                            + '&#8211; Hints: ' + data[i].hints + '<br \>'
+                            + '&#8211; Notes: ' + data[i].note  + '<br \>'
+                            + '&#8211; Demo: ' + data[i].demo  + '<br \>'
+                            + '&#8211; Status: ' + data[i].status + '<br \>'
+                            + '&#8211; Engineers: ' + data[i].engineers  + '<br \>'
+                            + '&#8211; Categories: ' + data[i].categories + '</li>';
 
+*/
 getProjectDetailPureJS('Wiki Search');
