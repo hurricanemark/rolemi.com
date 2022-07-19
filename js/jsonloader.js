@@ -43,4 +43,4 @@ function getProjectDetailPureJS(titleName){
 }
 
 
-getProjectDetail('Image Search Abstraction Layer');
+getProjectDetailPureJS('Wiki Search');
