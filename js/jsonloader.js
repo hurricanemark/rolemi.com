@@ -1,5 +1,5 @@
-import fetch from "node_fetch";
-//var fetch = require('node_fetch');
+//import fetch from "node_fetch";
+var fetch = require('node_fetch');
 /* ----- */
 function getProjectDetail(titleName){
 

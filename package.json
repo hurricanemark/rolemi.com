@@ -1,0 +1,26 @@
+{
+  "name": "rolemi.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hurricanemark/rolemi.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hurricanemark/rolemi.com/issues"
+  },
+  "homepage": "https://github.com/hurricanemark/rolemi.com#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.9"
+  }
+}
