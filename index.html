@@ -11,15 +11,12 @@
     <link rel="stylesheet" href="card_carousel.css">
     <link rel="treemenu" href="treemenu.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <script src="./js/require.js"></script> <!-- Load jQuery -->
     <!-- <script src="./js/navigate.js"></script> -->
-
     <script src="./js/jsonloader.js"></script>
 
 </head> 
-<body onload="getProjectDetail('Wicki Search');">
+<body onload="getProjectDetailPureJS('Wicki Search');">
 
     <h2>The Maddening Swordfish Eyebrow Code Maker &trade;</h2>
     <div class="topnav" id="myTopnav">
@@ -78,7 +75,8 @@
                 e.preventDefault();
                 //alert(thistext); // gets text contents of clicked li 
                 //alert($(this).text()); // gets innerHTML of clicked li
-                getProjectDetail($(this).text());
+                //getProjectDetail($(this).text());
+                getProjectDetailPureJS($(this).text());
             });
         });
     </script>

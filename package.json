@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/hurricanemark/rolemi.com#readme",
   "dependencies": {
-    "node-fetch": "^3.2.9"
+    "node-fetch": "^3.2.9",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "open": "^8.4.0"

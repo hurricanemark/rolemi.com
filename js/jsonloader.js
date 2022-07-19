@@ -1,21 +1,18 @@
-// import fetch from 'node-fetch';
-// globalThis.fetch = fetch;
-var fetch = require('node-fetch').fetch;
-// var { fetch } = require('node-fetch');
-globalThis.fetch = fetch;
-/* ----- */
-function getProjectDetail(titleName){
+/* pure javascript */
+function getProjectDetailPureJS(titleName){
+    let object;
+    let httpRequest = new XMLHttpRequest(); // asynchronous request
+    httpRequest.open("GET", "./data/prjPremises.json", true);
+    httpRequest.send();
+    httpRequest.addEventListener("readystatechange", function() {
+        if (this.readyState === this.DONE) {
+            // when the request has completed
+            object = JSON.parse(this.response);
+            //console.log(object);
+            appendData(object);
+        }
+    });
 
-    fetch('../data/prjPremises.json')
-      .then(function (response) {
-          return response.json();
-      })
-      .then(function (data) {
-          appendData(data);
-      })
-      .catch(function (err) {
-          console.log('error: ' + err);
-      });
     function appendData(data) {
         let mainContainer = document.getElementById("prject-detail");
         
@@ -41,8 +38,9 @@ function getProjectDetail(titleName){
                 div.innerHTML = segmentHTML;
                 mainContainer.appendChild(div);
             }
-                
         }
     }
 }
+
+
 getProjectDetail('Image Search Abstraction Layer');
