@@ -1,7 +1,8 @@
-//import fetch from "node_fetch";
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
+// globalThis.fetch = fetch;
+var fetch = require('node-fetch').fetch;
+// var { fetch } = require('node-fetch');
 globalThis.fetch = fetch;
-//var fetch = require('node-fetch').fetch;
 /* ----- */
 function getProjectDetail(titleName){
 
