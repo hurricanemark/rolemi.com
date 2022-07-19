@@ -35,7 +35,7 @@ function getProjectDetailPureJS(titleName){
                             + '</li><li>categories: ' + data[i].categories + '</li>';
             }
             if (segmentHTML !== "") {
-                console.log(segmentHTML);
+                //console.log(segmentHTML);
                 document.getElementById("prject-detail").innerHTML = "";
                 div.innerHTML = segmentHTML;
                 mainContainer.appendChild(div);
