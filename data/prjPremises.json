@@ -10,9 +10,10 @@
                 "Here's an entry on using Wikipedia's API: https://www.mediawiki.org/wiki/API:Main_page.",
                 "Use this link to experiment with Wikipedia's API."],
         "note": "",
+        "demo": "<a href='https://hurricanemark.github.io/WickiViewer/' target='_blank' title='Live demo on github page'>Click to run</a>",
         "status": "COMPLETED",
         "engineers": ["Mark Nguyen"],
-        "categories": ["Open Source", "freecodecamp.org"]
+        "categories": ["Pure javascript", "API", "Wikipedia API", "Search box", "Random button", "Wikipedia API"]
     },
     {
         "projectTitle": "Local Weather",
@@ -23,9 +24,10 @@
                         "Handle exceptions."],
         "hints": ["Convert units appropriate to geo location."],
         "note": ["Available in github page: https://hurricanemark.github.io/LocalWeather/"],
+        "demo": "<a href='https://codepen.io/hurricanemark/pen/jOmddGx' target='_blank' title='Live demo on codepen'>Click to run</a>",
         "status": "COMPLETED",
         "engineers": ["Mark Nguyen"],
-        "categories": ["Open Source", "freecodecamp.org"]
+        "categories": ["pure javascript", "API", "Geolocation API", "Weather API", "XMLHttpRequest"]
     },
     {
         "projectTitle": "Twitch JSON API",
@@ -38,6 +40,7 @@
         "hints": ["The relevant documentation about Twitch.tv's JSON API is here: https://dev.twitch.tv/docs/api/reference/#get-streams.",
                 "Here is an array of the Twitch.tv usernames of people who regularly stream: ['ESL_SC2', 'OgamingSC2', 'cretetion', 'freecodecamp', 'storbeck', 'habathcx', 'RobotCaleb', 'noobs2ninjas']"],
         "note": "Due to a change in conditions on API usage, Twitch.tv requires an API key, but we've built a workaround. Use https://twitch-proxy.freecodecamp.rocks/ instead of Twitch's API base URL (i.e. https://api.twitch.tv/helix ) and you'll still be able to get account information, without needing to sign up for an API key.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -52,6 +55,7 @@
                     "You can get a list of the most recently submitted search strings."],
         "hints": [],
         "note": "When you are done, make sure a working demo of your project is hosted somewhere public. Then submit the URL to it in the Solution Link field. Optionally, also submit a link to your project's source code in the GitHub Link field.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -66,6 +70,7 @@
                     "I can choose whether I want to play as X or O."],
         "hints": [],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -80,6 +85,7 @@
                     "I hear a sound that corresponds to each button both when the series of button presses plays, and when I personally press a button.  If I press the wrong button, I am notified that I have done so, and that series of button presses starts again to remind me of the pattern so I can try again.   I can see how many steps are in the current series of button presses.  If I want to restart, I can hit a button to do so, and the game will return to a single step.  I can play in strict mode where if I get a button press wrong, it notifies me that I have done so, and the game restarts at a new random series of button presses.   I can win the game by getting a series of 20 steps correct. I am notified of my victory, then the game starts over."],
         "hints": ["Here are mp3s you can use for each button: https://s3.amazonaws.com/freecodecamp/simonSound1.mp3, https://s3.amazonaws.com/freecodecamp/simonSound2.mp3, https://s3.amazonaws.com/freecodecamp/simonSound3.mp3, https://s3.amazonaws.com/freecodecamp/simonSound4.mp3."],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -94,6 +100,7 @@
                     "I can see the number of replies and views that each topic has had, and a timestamp of when the topic was last active."],
         "hints": ["To get the 30 most recent forum posts: https://forum-proxy.freecodecamp.rocks/latest."],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -108,6 +115,7 @@
                     "I can click into any of those recipes to view it.  I can edit these recipes.   I can delete these recipes.  All new recipes I add are saved in my browser's local storage. If I refresh the page, these recipes will still be there."],
         "hints": ["You should prefix your local storage keys on CodePen, i.e. _username_recipes"],
         "note": "When you are finished, include a link to your project on CodePen and click the I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -123,6 +131,7 @@
         "hints": ["Here's an explanation of Conway's Game of Life from John Conway himself: https://www.youtube.com/watch?v=E8kUJL04ELA",
                 "Here's an overview of Conway's Game of Life with rules for your reference: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -140,6 +149,7 @@
                     "When I find and beat the boss, I win.  The game should be challenging, but theoretically winnable."],
         "hints": [],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -161,6 +171,7 @@
                     ],
         "hints": [],
         "note": "Once you've finished implementing these user stories, enter the URL to your live app and, optionally, your GitHub repository. Then click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -175,6 +186,7 @@
         "hints": ["Here's a dataset you can use to build this: https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json",
                 "You can create a spritesheet of national flags at https://www.flag-sprites.com."],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -189,6 +201,7 @@
             "I can mouse over the meteorite's data point for additional data."],
         "hints": [" Here's a dataset you can use to build this: https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json"],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -204,6 +217,7 @@
             "I can propose a trade and wait for the other user to accept the trade."],
         "hints": [],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -221,6 +235,7 @@
             "As an authenticated user, if I upload an image that is broken, it will be replaced by a placeholder image. (can use jQuery broken image detection)"],
         "hints": ["Masonry.js is a library that allows for Pinterest-style image grids."],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -236,6 +251,7 @@
             "As an unauthenticated user, when you login you should not have to search again."],
         "hints": ["Try using the Yelp API to find venues in the cities your users search for. If you use Yelp's API, be sure to mention so in your app."],
         "note": "When you are done, make sure a working demo of your project is hosted somewhere public. Then submit the URL to it in the Solution Link field. Optionally, also submit a link to your project's source code in the GitHub Link field.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -251,6 +267,7 @@
                     "You can see changes in real-time when any other user adds or removes a stock. For this you will need to use Web Sockets."],
         "hints": [],
         "note": "When you are done, make sure a working demo of your project is hosted somewhere public. Then submit the URL to it in the Solution Link field. Optionally, also submit a link to your project's source code in the GitHub Link field.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -270,6 +287,7 @@
                     "As an authenticated user, if you don't like the options on a poll, you can create a new option."],
         "hints": [],
         "note": "When you are done, make sure a working demo of your project is hosted somewhere public. Then submit the URL to it in the Solution Link field. Optionally, also submit a link to your project's source code in the GitHub Link field.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -285,6 +303,7 @@
                     "The game keeps track of the player and computer's score."],
         "hints": [],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
@@ -302,6 +321,7 @@
                     "I can click on the 'Reset All' button to remove all the colors from the circles."],
         "hints": [],
         "note": "When you are finished, include a link to your project on CodePen and click the 'I've completed this challenge' button.",
+        "demo": "",
         "status": "PRE-PLAN",
         "engineers": ["Mark Nguyen"],
         "categories": ["Open Source", "freecodecamp.org"]
