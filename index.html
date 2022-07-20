@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="card_carousel.css">
     <link rel="treemenu" href="treemenu.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <!-- <script src="./js/navigate.js"></script> -->
     <script src="./js/jsonloader.js"></script>
 
 </head> 
 <body onload="getProjectDetailPureJS('Wicki Search');">
 
-    <h2>The Maddening Swordfish Eyebrow Code Maker &trade;</h2>
+    <h2>The Swordfish Eyebrow Code Maker &trade;</h2>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
         <a href="#articles">Articles</a>
@@ -180,7 +178,15 @@
         <p>Mark Nguyễn @ <a href="https://www.rolemi.com">www.RolEmi.com</a></p>
         <p>Affiliate @AES LLC <a href="https://aesclevcer.com">www.aesclever.com</a></p>
         <p><a href="mailto:mark@rolemi.com">Send email</a></p>
+        <h1>Visitor count: <span id="visits"></span> times.</h1>
+        <!-- 
+            Run this:
+            https://api.countapi.xyz/create?namespace=rolemi.com&enable_reset=1
+            Get this:
+            {"namespace":"rolemi.com","key":"e0073e38-dcc4-45a6-81f9-47aae7680f4f","value":0}
+         -->
     </div>
 </div>
+<script async src="https://api.countapi.xyz/hit/codefoxx.com/e0073e38-dcc4-45a6-81f9-47aae7680f4f?callback=websiteVisits"></script>
 </body>
 </html>

@@ -1,3 +1,8 @@
+/* get visitor counter */
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
+
 /* pure javascript */
 function getProjectDetailPureJS(titleName){
     let object;
