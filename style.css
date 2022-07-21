@@ -70,6 +70,17 @@
   }
 
 
+/* middle column div content */
+#iframe_profile {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+#prject-detail {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
 
 
 hr {
@@ -94,20 +105,7 @@ ul.dashed > li:before {
   text-indent: -20px;
 }
 
-/* IFRAME PLACEHOLDER */
-#display-frame {
-  padding: 0px;
-  background-color: #ccc;
-  display: inline-flexbox;
-}
-#display-frame > iframe {
-  width: 100%;
-  height: 560px;
-}
-#display-frame > div {
-  margin: auto;
-}
-/* -- END IFRAME PLACEHOLDER -- */
+
 
 
 /* Add a black background color to the top navigation */
@@ -251,44 +249,53 @@ ul.dashed > li:before {
   }
 
 
-  /* Create three unequal columns that floats next to each other */
-.column {
-    float: left;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0%;
-    padding-bottom: 0px;
-    background: rgb(208, 233, 240);
-  }
+/* 
+ Dynamically keeping equal columns height
+ Create three unequal columns that floats next to each other 
+ */
+#page-wrap {    
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 0%;
+  padding-bottom: 0%; }
+#page-wrap > div { margin: 0 0 10px 0; min-width: 650px; width: 100%;}
+
+#one-true { overflow: hidden; }
+#one-true .col {
+  float: left;
+  padding: 10px;
   
-  /* Left and right column */
-  .column.side {
-    width: 15%;
-    height: 549px;
-    background: rgb(208, 233, 240);
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0%;
-    padding-bottom: 0px;
-    overflow: scroll;
-    overflow-x: auto;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-  }
-  
-  /* Middle column */
-  .column.middle {
-    width: 70%;
-    background: rgb(82, 79, 79);
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-top: 0%;
-    padding-bottom: 0px;
-    overflow: scroll;
-    overflow-x: auto;
-    overflow-y: auto;
-    border: 0.5px solid #ccc;
-  }
+  margin-bottom: -99999px; /* Negative margin to fix 'overflow: hidden' */
+  padding-bottom: 99999px;
+}
+#one-true .col:nth-child(1) { 
+  width: 15%; height: 100%; 
+  background: rgb(208, 233, 240)}
+
+#one-true .col:nth-child(2) { width: 75%; height: 100%; border: 1px solid #d2a776; background: rgb(210, 233, 240)}
+#one-true .col:nth-child(3) { width: 10%; height: 100%;  background: rgb(208, 233, 240)}
+#one-true p { margin-bottom: 30px;}
+#one-true div { margin-bottom: 30px;}
+
+/* IFRAME PLACEHOLDER */
+#iframe_profile {
+  padding: 0px;
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  font-style: italic;
+  justify-content: center;
+  background-color: rgb(148, 162, 165);
+  color: #ddd;
+  overflow: scroll;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#iframe_profile > div {
+  margin: auto;
+}
+/* -- END IFRAME PLACEHOLDER -- */
 
   
 a:hover {

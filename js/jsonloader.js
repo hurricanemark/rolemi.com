@@ -3,8 +3,36 @@ function websiteVisits(response) {
     document.querySelector("#visits").textContent = response.value;
 }
 
+/*
+Lession learned: FileReader only reads from inputs of type file and not from a static path.
+*/
+
+// var mdFileName = "./docs/markbio.md";
+// function readMdFile() {
+//     if (mdFileName !== "") {
+//         const reader = new FileReader();
+//         reader.onload = function(e) {
+//             document.querySelector('#prject-detail').setAttribute('src', e.target.result);
+//         }
+//         reader.readAsDataURL(mdFileName);
+//     }
+// }
+
+function showProfileMd(action){
+    if (action === "show") {
+        document.getElementById("prject-detail").style.display = "none";
+        document.getElementById("iframe_profile").style.display = "block";   
+    } else if (action === "NoShow") {
+        document.getElementById("prject-detail").style.display = "block";
+        document.getElementById("iframe_profile").style.display = "none";
+    }
+}
+
+
 /* pure javascript */
 function getProjectDetailPureJS(titleName){
+    // showProfileMd("NoShow");
+
     let object;
     let httpRequest = new XMLHttpRequest(); // asynchronous request
     httpRequest.open("GET", "./data/prjPremises.json", true);

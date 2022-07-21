@@ -1,6 +1,3 @@
-Mark Nguyen
-Technical Research & Development Manager
-
 Mark Nguyen has 20 + years of experience in the technology sector,
 predominantly in the communications software and hardware field. He has
 worked with OEM companies, privately held companies, and a pre-IPO start-up.
