@@ -77,7 +77,7 @@ function getProjectDetailPureJS(titleName){
         for (let i = 0; i < data.length; i++) {
             let div = document.createElement("div");
             let segmentHTML = "";
-            // alert(data[i].demo);
+            // alert(data[i].projectTitle + ' = ' + titleName);
             if (data[i].projectTitle === titleName) {
                 segmentHTML = '<br \><ul class="dashed"><span style="color:green"><em>' + data[i].projectTitle + '</em></span></ul>&emsp;&emsp; <hr><br \>'
                             + '&emsp; &#8211; Project Url: ' + data[i].projectUrl + '<br \>'

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>&#x2728;RolEmi Pride</title>
+    <meta name="viewport" content=""width=device-width, initial-scale="1">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>&#x2728;RolEmi Pride</title>
     
     <!-- Load an icon library to show a menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="card_carousel.css">
-    <link rel="treemenu" href="treemenu.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/card_carousel.css">
+    <!-- <link rel="stylesheet" href="treemenu.css"> -->
+    <link rel="stylesheet" href="./css/treeview.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/jsonloader.js"></script>
+    <script src="./js/treeview_navigation.js"></script>
 
 </head> 
 <body onload="getProjectDetailPureJS('Wicki Search');">
@@ -65,28 +68,69 @@
   <div id="one-true" class="group">
     <!-- LEFT COLUMN -->
     <div class="col">
-        <h2>Projects</h2>
+        <ul id="myUL">
+            <li><span class="caret">Fullstack Projects</span>
+              <ul class="nested">
+                <li>Chart the Stock Market</li>
+                <li>Forum Homepage</li>
+                <li>Game of Life</li>
+                <li>Image Search Abstraction Layer</li>
+                <li>Light-Bright App</li>
+                <li>Local Weather</li>
+                <li>Manage Book Trading Club</li>
+                <li>Map Data Across the Globe</li>
+                <li>National Contiguity with a Force Directed Graph</li>
+                <li>Nightlife Coordination App</li>
+                <li>P2P Video Chat</li>
+                <li>Pinterest Clone</li>
+                <li>Pong Game</li>
+                <li>Recipe Box</li>
+                <li>Roguelike Dungeon Crawler Game</li>
+                <li>Simon Game</li>
+                <li>Tic Tac Toe</li>
+                <li>Twitch JSON API</li>
+                <li>Voting App</li>
+                <li>Wiki Search</li>
+                <li><span class="caret">Tea</span>
+                  <ul class="nested">
+                    <li>Black Tea</li>
+                    <li>White Tea</li>
+                    <li><span class="caret">Green Tea</span>
+                      <ul class="nested">
+                        <li>Sencha</li>
+                        <li>Gyokuro</li>
+                        <li>Matcha</li>
+                        <li>Pi Lo Chun</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+        </ul>
+
+        <h3>Mini Projects</h3>
         <ul class="projlist" id="project_list">
-            <li class="selected"><a title="Wicki Search" href="https://hurricanemark.github.io/WickiViewer/" target="_blank">Wicki Search</a></li>
-            <li class="selected"><a title="Local Weather" href="https://codepen.io/hurricanemark/pen/jOmddGx" target="_blank">Local Weather</a></li>
-            <li><a href="#">Twitch JSON API</a></li>
-            <li><a title="Image Search Abstraction Layer" href="#">Image Search Abstraction Layer</a></li>
-            <li><a title="Tic Tac Toe" href="#">Tic Tac Toe</a></li>
-            <li><a title="Simon Game" href="#">Simon Game</a></li>
-            <li><a title="Forum Homepage" href="#">Forum Homepage</a></li>
-            <li><a title="Recipe Box" href="#">Recipe Box</a></li>
-            <li><a title="Game of Life" href="#">Game of Life</a></li>
-            <li><a title="Roguelike Dungeon Crawler Game" href="#">Roguelike Dungeon Crawler Game</a></li>
-            <li><a title="P2P Video Chat" href="#">P2P Video Chat</a></li>
-            <li><a title="National Contiguity with a Force Directed Graph" href="#">National Contiguity with a Force Directed Graph</a></li>
-            <li><a title="Map Data Across the Globe" href="#">Map Data Across the Globe</a></li>
-            <li><a title="Manage Book Trading Club" href="#">Manage Book Trading Club</a></li>
-            <li><a title="Pinterest Clone" href="#">Pinterest Clone</a></li>
-            <li><a title="Nightfife Coordination App" href="#">Nightfife Coordination App</a></li>
-            <li><a title="Chart the Stock Market" href="#">Chart the Stock Market</a></li>
-            <li><a title="Voting App" href="#">Voting App</a></li>
-            <li><a title="Pong Game" href="#">Pong Game</a></li>
-            <li><a title="Light-Bright App" href="#">Light-Bright App</a></li>
+            <li class="selected"><a title="Wicki Search" href="https://hurricanemark.github.io/WickiViewer/" target="_blank">&#x1F4A0; Wicki Search</a></li>
+            <li class="selected"><a title="Local Weather" href="https://codepen.io/hurricanemark/pen/jOmddGx" target="_blank">&#x1F4A0; Local Weather</a></li>
+            <li><a href="#">&#x1F4A0; Twitch JSON API</a></li>
+            <li><a title="Image Search Abstraction Layer" href="#">&#x1F4A0; Image Search Abstraction Layer</a></li>
+            <li><a title="Tic Tac Toe" href="#">&#x1F4A0; Tic Tac Toe</a></li>
+            <li><a title="Simon Game" href="#">&#x1F4A0; Simon Game</a></li>
+            <li><a title="Forum Homepage" href="#">&#x1F4A0; Forum Homepage</a></li>
+            <li><a title="Recipe Box" href="#">&#x1F4A0; Recipe Box</a></li>
+            <li><a title="Game of Life" href="#">&#x1F4A0; Game of Life</a></li>
+            <li><a title="Roguelike Dungeon Crawler Game" href="#">&#x1F4A0; Roguelike Dungeon Crawler Game</a></li>
+            <li><a title="P2P Video Chat" href="#">&#x1F4A0; P2P Video Chat</a></li>
+            <li><a title="National Contiguity with a Force Directed Graph" href="#">&#x1F4A0; National Contiguity with a Force Directed Graph</a></li>
+            <li><a title="Map Data Across the Globe" href="#">&#x1F4A0; Map Data Across the Globe</a></li>
+            <li><a title="Manage Book Trading Club" href="#">&#x1F4A0; Manage Book Trading Club</a></li>
+            <li><a title="Pinterest Clone" href="#">&#x1F4A0; Pinterest Clone</a></li>
+            <li><a title="Nightfife Coordination App" href="#">&#x1F4A0; Nightfife Coordination App</a></li>
+            <li><a title="Chart the Stock Market" href="#">&#x1F4A0; Chart the Stock Market</a></li>
+            <li><a title="Voting App" href="#">&#x1F4A0; Voting App</a></li>
+            <li><a title="Pong Game" href="#">&#x1F4A0; Pong Game</a></li>
+            <li><a title="Light-Bright App" href="#">&#x1F4A0; Light-Bright App</a></li>
         </ul>
 
         <script type="text/javascript">
@@ -94,8 +138,9 @@
                 // $("ul[id*=project_list] li").click(function () { 
                 $("ul.projlist").on("click", "a", function(e) {
                     e.preventDefault();
-
-                    getProjectDetailPureJS($(this).text());
+                    //alert($(this).text().slice(2));
+                    let selectTitle = $(this).text().slice(2);
+                    getProjectDetailPureJS(selectTitle.trim());
                 });
             });
         </script>
@@ -161,7 +206,7 @@
             <div class="card">
                 <h3>Archives</h3>
                 <ul>
-                    <a href="#">&#x27A1; The humble arithmatic of exponential propagation</a><br \><br>
+                    <a href="#">&#x1F4A0;  The humble arithmatic of exponential propagation</a><br \><br>
                     <a href="#">&#x2B50; Why C#?</a><br \><br>
                     <a href="#">&#x2714; Lore of CI/CD</a><br \><br>
                     <a href="#">&#x2728; Ransome not so handsome</a><br \><br>
