@@ -48,7 +48,7 @@ function getProfilePureJS() {
                         '&emsp; &#8211; Expertise: <br \>' + data[0].history.p4 + '<br \><br \>' +
                         '&emsp; &#8211; Credentials: <br \>' + data[0].history.p5 + '<br \><br \>';
         if (segmentHTML !== "") {
-            alert(segmentHTML);
+            //alert(segmentHTML);
             document.getElementById("prject-detail").innerHTML = "";
             div.innerHTML = segmentHTML;
             mainContainer.appendChild(div);
