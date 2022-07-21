@@ -258,7 +258,7 @@ ul.dashed > li:before {
   padding-right: 2px;
   padding-top: 0%;
   padding-bottom: 0%; }
-#page-wrap > div { margin: 0 0 10px 0; min-width: 650px; width: 100%;}
+#page-wrap > div { margin: 0 0 5px 0; min-width: 650px; width: 100%;}
 
 #one-true { overflow: hidden; }
 #one-true .col {
