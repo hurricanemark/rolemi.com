@@ -7,16 +7,6 @@ function websiteVisits(response) {
 Lession learned: FileReader only reads from inputs of type file and not from a static path.
 */
 
-// var mdFileName = "./docs/markbio.md";
-// function readMdFile() {
-//     if (mdFileName !== "") {
-//         const reader = new FileReader();
-//         reader.onload = function(e) {
-//             document.querySelector('#prject-detail').setAttribute('src', e.target.result);
-//         }
-//         reader.readAsDataURL(mdFileName);
-//     }
-// }
 
 function showProfileMd(action){
     if (action === "show") {
@@ -29,10 +19,45 @@ function showProfileMd(action){
 }
 
 
+function getProfilePureJS() {
+    let object;
+    let httpRequest = new XMLHttpRequest(); // asynchronous request
+    httpRequest.open("GET", "./data/profile.json", true);
+    httpRequest.send();
+    httpRequest.addEventListener("readystatechange", function() {
+        if (this.readyState === this.DONE) {
+            //alert(this.response);
+            // when the request has completed
+            object = JSON.parse(this.response);
+            //console.log(object);
+            appendProfileData(object);
+        }
+    });
+
+    function appendProfileData(data) {
+        let mainContainer = document.getElementById("prject-detail");
+        let div = document.createElement("div");
+        let segmentHTML = "";
+        
+// alert(data[0].profile);
+// alert(data[0].history);
+        segmentHTML = '<br \><ul class="dashed"><span style="color:green"><em>' + data[0].profile + '</em></span></ul>&emsp;&emsp; <hr><br \>'
+                        + '&emsp; &#8211; History: <br \>' + data[0].history.p1 + '<br \><br \>' +
+                        '&emsp; &#8211; Path: <br \>' + data[0].history.p2 + '<br \><br \>' +
+                        '&emsp; &#8211; Skills: <br \>' + data[0].history.p3 + '<br \><br \>' +
+                        '&emsp; &#8211; Expertise: <br \>' + data[0].history.p4 + '<br \><br \>' +
+                        '&emsp; &#8211; Credentials: <br \>' + data[0].history.p5 + '<br \><br \>';
+        if (segmentHTML !== "") {
+            alert(segmentHTML);
+            document.getElementById("prject-detail").innerHTML = "";
+            div.innerHTML = segmentHTML;
+            mainContainer.appendChild(div);
+        }
+    }
+}
+
 /* pure javascript */
 function getProjectDetailPureJS(titleName){
-    // showProfileMd("NoShow");
-
     let object;
     let httpRequest = new XMLHttpRequest(); // asynchronous request
     httpRequest.open("GET", "./data/prjPremises.json", true);

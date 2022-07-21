@@ -41,7 +41,16 @@
                 <a href="https://conta.cc/3zc3qXh" target="prject-detail">Special offer</a>
             </div>
         </div>
-        
+        <a id="myprofile" href="#">Profile</a>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("a[id*=myprofile]").click(function() {
+                    alert("You clicked on " + $(this).text());
+                    getProfilePureJS();
+                });
+            });
+        </script>
+
         <a href="https://github.com/hurricanemark" target="display-frame" title="direct to github.com/hurricanemark" >About</a>
 
         
@@ -52,7 +61,7 @@
 </div>
 
 
-
+<!-- wrap columns in a box -->
 <div id="page-wrap">
   <div id="one-true" class="group">
     <!-- LEFT COLUMN -->
@@ -190,9 +199,7 @@
             Get this:
             {"namespace":"rolemi.com","key":"3a9e47fd-2b12-49dc-b15e-0767e731e82b","value":0}
          -->
-         <!-- <a href onClick="showProfileMd('show')">Profile</a> -->
-         <hr>
-         <iframe id="iframe_profile" name="iframe_profile" src="./docs/markbio.md" title="profilemd" style="color:white"; display="none"; ></iframe>
+
     </div>
 </div>
 <script async src="https://api.countapi.xyz/hit/codefoxx.com/3a9e47fd-2b12-49dc-b15e-0767e731e82b?callback=websiteVisits"></script>
