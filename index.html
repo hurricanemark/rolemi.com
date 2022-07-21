@@ -41,7 +41,7 @@
                 <a href="https://conta.cc/3zc3qXh" target="prject-detail">Special offer</a>
             </div>
         </div>
-        <a href onClick="showProfileMd('show')">Profile</a>
+        
         <a href="https://github.com/hurricanemark" target="display-frame">About</a>
 
         
@@ -86,9 +86,7 @@
                 // $("ul[id*=project_list] li").click(function () { 
                 $("ul.projlist").on("click", "a", function(e) {
                     e.preventDefault();
-                    //alert(thistext); // gets text contents of clicked li 
-                    //alert($(this).text()); // gets innerHTML of clicked li
-                    //getProjectDetail($(this).text());
+
                     getProjectDetailPureJS($(this).text());
                 });
             });
@@ -99,7 +97,6 @@
     <div class="col">
         <div style="background-color: rgb(195, 217, 232);">
             <div id="prject-detail" ></div> 
-            <!-- <iframe id="iframe_profile" name="iframe_profile" src="./docs/markbio.md" title="profilemd" ></iframe> -->
         </div>  
     </div>
 
@@ -193,8 +190,9 @@
             Get this:
             {"namespace":"rolemi.com","key":"3a9e47fd-2b12-49dc-b15e-0767e731e82b","value":0}
          -->
+         <!-- <a href onClick="showProfileMd('show')">Profile</a> -->
          <hr>
-         <iframe id="iframe_profile" name="iframe_profile" src="./docs/markbio.md" title="profilemd" style="color:white;" ></iframe>
+         <iframe id="iframe_profile" name="iframe_profile" src="./docs/markbio.md" title="profilemd" style="color:white"; display="none"; ></iframe>
     </div>
 </div>
 <script async src="https://api.countapi.xyz/hit/codefoxx.com/3a9e47fd-2b12-49dc-b15e-0767e731e82b?callback=websiteVisits"></script>
