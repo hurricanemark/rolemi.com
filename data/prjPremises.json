@@ -10,7 +10,7 @@
                 "Here's an entry on using Wikipedia's API: https://www.mediawiki.org/wiki/API:Main_page.",
                 "Use this link to experiment with Wikipedia's API."],
         "note": "",
-        "demo": "<a href='https://hurricanemark.github.io/WickiViewer/' target='_blank' title='Live demo on github page'>Click to run</a>",
+        "demo": "<a href='https://hurricanemark.github.io/WickiViewer/' target='_blank' title='Live demo on github page'>Click to run</a> or <a href='https://codepen.io/hurricanemark/pen/WNErgQo' target='_blank' title='Live demo on codepen.io'>Click to run</a>",
         "status": "COMPLETED",
         "engineers": ["Mark Nguyen"],
         "categories": ["Pure javascript", "API", "Wikipedia API", "Search box", "Random button", "Wikipedia API"]
