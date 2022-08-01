@@ -22,7 +22,7 @@ function showProfileMd(action){
 function getProfilePureJS() {
     let object;
     let httpRequest = new XMLHttpRequest(); // asynchronous request
-    httpRequest.open("GET", "./data/profile.json", true);
+    httpRequest.open("GET", "./data/about.json", true);
     httpRequest.send();
     httpRequest.addEventListener("readystatechange", function() {
         if (this.readyState === this.DONE) {
@@ -43,10 +43,16 @@ function getProfilePureJS() {
 // alert(data[0].history);
         segmentHTML = '<br \><ul class="dashed"><span style="color:green"><em>' + data[0].profile + '</em></span></ul>&emsp;&emsp; <hr><br \>'
                         + '&emsp; &#8211; History: <br \>' + data[0].history.p1 + '<br \><br \>' +
-                        '&emsp; &#8211; Path: <br \>' + data[0].history.p2 + '<br \><br \>' +
+                        '&emsp; &#8211; Path: <br \>' + data[0].history.p2 + '<br \>' +
+                        data[0].history.p2_2 + '<br \><br \>' +
                         '&emsp; &#8211; Skills: <br \>' + data[0].history.p3 + '<br \><br \>' +
                         '&emsp; &#8211; Expertise: <br \>' + data[0].history.p4 + '<br \><br \>' +
-                        '&emsp; &#8211; Credentials: <br \>' + data[0].history.p5 + '<br \><br \>';
+                        '&emsp; &#8211; Credentials: <br \>' + data
+                        [0].history.p5 + '<br \><br \>' +
+                        '&emsp; &#8211; Contributions: <br \>' + data[0].history.p6 + '<br \>' + data[0].history.p7 + '<br \><br \>' +
+                        '&emsp; &#8211; Hobbies: <br \>' + data
+                        [0].history.p8 + '<br \><br \>';
+                        
         if (segmentHTML !== "") {
             //alert(segmentHTML);
             document.getElementById("prject-detail").innerHTML = "";

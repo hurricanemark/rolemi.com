@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/card_carousel.css">
-    <!-- <link rel="stylesheet" href="treemenu.css"> -->
+
     <link rel="stylesheet" href="./css/treeview.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/jsonloader.js"></script>
-    <script src="./js/treeview_navigation.js"></script>
+
 
 </head> 
 <body onload="getProjectDetailPureJS('Wicki Search');">
@@ -44,18 +44,19 @@
                 <a href="https://conta.cc/3zc3qXh" target="prject-detail">Special offer</a>
             </div>
         </div>
-        <a id="myprofile" href="#">Profile</a>
+
+
+        <a href="https://github.com/hurricanemark" target="display-frame" title="redirect to github.com/hurricanemark" >Profile</a>
+
+        <a id="myabout" href="#">About</a>
         <script type="text/javascript">
             $(document).ready(function() {
-                $("a[id*=myprofile]").click(function() {
+                $("a[id*=myabout]").click(function() {
                     getProfilePureJS();
                 });
             });
         </script>
 
-        <a href="https://github.com/hurricanemark" target="display-frame" title="direct to github.com/hurricanemark" >About</a>
-
-        
         <a href="#login" title="comming soon">&emsp;&emsp;&emsp;&emsp;&emsp;Login</a>
         <a href="#register" title="comming soon">Register</a>
 
@@ -67,11 +68,14 @@
 <div id="page-wrap">
   <div id="one-true" class="group">
     <!-- LEFT COLUMN -->
-    <div class="col">
-        <ul id="myUL">
-            <li><span class="caret">Fullstack Projects</span>
+    <div class="col container">
+        
+
+
+        <ul class="projlist" id="myUL">
+            <li><span class="caret" title="Viewable by registered members">Fullstack Projects</span>
               <ul class="nested">
-                <li>Chart the Stock Market</li>
+                <li onfocus=" let caretChild='ChartTockMarket'; name='one'; id='chartstockmarket'">Chart the Stock Market</li>
                 <li>Forum Homepage</li>
                 <li>Game of Life</li>
                 <li>Image Search Abstraction Layer</li>
@@ -108,9 +112,23 @@
               </ul>
             </li>
         </ul>
+        <script>
+            const toggler = document.getElementsByClassName("caret");
+
+            for (let i = 0; i < toggler.length; i++) {
+                toggler[i].addEventListener("click", function() {
+                    this.parentElement.querySelector(".nested").classList.toggle("active");
+                    this.classList.toggle("caret-down");
+                 
+                });
+            }
+
+
+            </script>
 
         <h3>Mini Projects</h3>
         <ul class="projlist" id="project_list">
+            <li class="selected"><a title="Server side pagination" href="https://hurricanemark.github.io/Pagination/" target="_blank">&#x1F4A0; Server pagination</a></li>
             <li class="selected"><a title="Wicki Search" href="https://hurricanemark.github.io/WickiViewer/" target="_blank">&#x1F4A0; Wicki Search</a></li>
             <li class="selected"><a title="Local Weather" href="https://codepen.io/hurricanemark/pen/jOmddGx" target="_blank">&#x1F4A0; Local Weather</a></li>
             <li><a href="#">&#x1F4A0; Twitch JSON API</a></li>
@@ -151,6 +169,7 @@
         <div style="background-color: rgb(195, 217, 232);">
             <div id="prject-detail" ></div> 
         </div>  
+        <iframe width="100%" height="350" src="./data/about.json" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <!-- RIGHT COLUMN -->
@@ -234,9 +253,9 @@
 <div class="bottom">
     <div class="card">
         <p>Mark Nguyễn @ <a href="https://www.rolemi.com">www.RolEmi.com</a></p>
-        <p>Affiliate @AES LLC <a href="https://aesclevcer.com">www.aesclever.com</a></p>
+        <p>Affiliation: Partner and CTO @AES LLC <a href="https://aesclevcer.com">www.aesclever.com</a></p>
         <p><a href="mailto:mark@rolemi.com">Send email</a></p>
-        <p><em>Visitor count: </em><span style="color:yellowgreen" id="visits"></span> times.</p>
+        <p><em>Visitor count: </em><span style="color:rgb(36, 11, 15)" id="visits"></span> times.</p>
         <!-- 
             Visitor counter -- Run this:
             https://api.countapi.xyz/create?namespace=rolemi.com&enable_reset=1
