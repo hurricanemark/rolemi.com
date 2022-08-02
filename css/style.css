@@ -272,8 +272,8 @@ ul.dashed > li:before {
   width: 15%; height: 100%; 
   background: rgb(208, 233, 240)}
 
-#one-true .col:nth-child(2) { width: 75%; height: 100%; border: 1px solid #d2a776; background: rgb(210, 233, 240)}
-#one-true .col:nth-child(3) { width: 10%; height: 100%;  background: rgb(208, 233, 240)}
+#one-true .col:nth-child(2) { width: 70%; height: 100%; border: 1px solid #d2a776; background: rgb(210, 233, 240)}
+#one-true .col:nth-child(3) { width: 15%; height: 100%;  background: rgb(208, 233, 240)}
 #one-true p { margin-bottom: 30px;}
 #one-true div { margin-bottom: 30px;}
 
