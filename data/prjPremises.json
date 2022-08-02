@@ -4,7 +4,7 @@
         "projectUrl": "<a href='https://hurricanemark.github.io/Pagination/' target='_blank' title='Server side pagination'>gitpage for pagination</a>",
         "description": "A backend server --Given a structured data source, create a middleware function generalized enough to call on with various data models and returning a diced and sliced data layout with { previous, next, results } of whole of subset of the passed-in data object along with additional calculated statistics such as average, total, median, etc.",
         "objective": "To learn how to create a server-side pagination library for Node.js and Express.js.",
-        "userStory": "I want to be able to paginate my data on the server side.",
+        "userStory": ["I want to be able to paginate my data on the server side.", "Using REST Client extension to write test driven code file 'request.rest' to simulate the REST client querries similar to using Postman."],
         "hints": [],
         "note": "",
         "demo": "<a href='https://github.com/hurricanemark/Pagination' target='_blank' title='Source for server pagination'>Github</a>",
@@ -13,7 +13,7 @@
             "Mark Nguyen"
         ],
         "categories": [
-            "nodejs", "express", "pagination"
+            "nodejs", "express", "mongoose", "MongoDB Compass", "pagination"
         ]
 
     },
