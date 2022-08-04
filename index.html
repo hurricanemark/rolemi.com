@@ -14,7 +14,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/jsonloader.js"></script>
-
+    <script src="./js/navigate.js"></script>
 
 </head> 
 <body onload="getProjectDetailPureJS('Wicki Search');">
@@ -69,6 +69,37 @@
   <div id="one-true" class="group">
     <!-- LEFT COLUMN -->
     <div class="col">
+        <div class="tree-menu codechallenge" id="code_challenge">
+            <ul>
+                <li><a href="#">Python</a>
+                    <ul>
+                        <li><a href="#codechallenge_001" title="Two numbers in list that add up to k">is Sum Equal K</a></li>
+                        <li><a href="#codechallenge_002" title="Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.">Reduce function</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">BASH</a></li>
+                <li><a href="#">C#</a></li>
+            </ul>
+        </div>
+        <script>
+            $('.codechallenge').ntm();
+            $('#click').click(function() {
+                $('.parent > a').click();
+            });
+
+            $(document).ready(function() {
+                // $("ul[id*=project_list] li").click(function () { 
+                //$("ul").on("click", "a", function(e) {
+                $("a").on("click", function(e) {
+                    e.preventDefault();
+                    let selectTitle = $(this).text();
+                    alert(selectTitle);
+                    //getProjectDetailPureJS(selectTitle.trim());
+                });
+            });
+
+        </script>
         <ul class="projlist" id="myUL">
             <li><span class="caret">Fullstack Projects</span>
               <ul class="nested">
