@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./css/treeview.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <script src="./js/jsonloader.js"></script>
-    <script src="./js/navigate.js"></script>
+    <!-- <script src="./js/navigate.js"></script> -->
 
 </head> 
 <body onload="getProjectDetailPureJS('Wicki Search');">
@@ -30,23 +31,24 @@
         <div class="dropdown">
             <button class="dropbtn">Products<em class="fa fa-caret-down"></em></button>
             <div class="dropdown-content">
-              <a href="https://new.aesclever.com/cleverview-for-tcp-ip/" target="display-frame">CleverView TCPIP</a>
-              <a href="https://new.aesclever.com/cleverview-for-tcp-ip-on-linux/" target="display-frame">Clever IDS</a>
-              <a href="https://new.aesclever.com/cleverdetect-for-dns/" target="display-frame">CLEVERDetect DNS</a>
-              <a href="https://new.aesclever.com/clever-decoder/" target="display-frame">Clever Decoder</a>
-              <a href="https://new.aesclever.com/cleverview-for-ctrace-analysis/" target="display-frame">CleverView cTrace Analysis</a>
+              <a href="https://new.aesclever.com/cleverview-for-tcp-ip/" target="_blank">CleverView TCPIP</a>
+              <a href="https://new.aesclever.com/cleverview-for-tcp-ip-on-linux/" target="_blank">Clever IDS</a>
+              <a href="https://new.aesclever.com/cleverdetect-for-dns/" target="_blank">CLEVERDetect DNS</a>
+              <a href="https://new.aesclever.com/clever-decoder/" target="_blank">Clever Decoder</a>
+              <a href="https://new.aesclever.com/cleverview-for-ctrace-analysis/" target="_blank">CleverView cTrace Analysis</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="dropbtn">News<em class="fa fa-caret-down"></em></button>
             <div class="dropdown-content">
                 <a href="https://conta.cc/3B0Aow5" target="prject-detail">DNS Vulnerabilities</a>
-                <a href="https://conta.cc/3JRJuOL" target="prject-detail">Air gaps in TCP protocol</a>
+                <a href="https://conta.cc/3JRJu0L" target="prject-detail">Air gaps in TCP protocol</a>
             </div>
         </div>
 
 
-        <a href="https://github.com/hurricanemark" target="display-frame" title="redirect to github.com/hurricanemark" >Profile</a>
+
+        <a href="https://github.com/hurricanemark" target="_blank" title="redirect to github.com/hurricanemark" >Profile</a>
 
         <a id="myabout" href="#">About</a>
         <script type="text/javascript">
@@ -55,6 +57,7 @@
                     getProfilePureJS();
                 });
             });
+
         </script>
 
         <a href="#login" title="comming soon">&emsp;&emsp;&emsp;&emsp;&emsp;Login</a>
@@ -73,7 +76,7 @@
             <ul>
                 <li><a href="#challenges" title="Coding challenges">Python</a>
                     <ul>
-                        <li><a href="codechallenge_001.txt" target="_blank" id="codechallenge_001" title="Two numbers in list that add up to k">is Sum Equal K</a></li>
+                        <li><a href="./data/codechallenge_001.txt" target="prject-detail" id="codechallenge_001" title="Two numbers in list that add up to k">is Sum Equal K</a></li>
                         <li><a href="codechallenge_002.py" id="codechallenge_002" title="Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.">Reduce function</a></li>
                     </ul>
                 </li>
@@ -93,8 +96,8 @@
                     e.preventDefault();
                     let selectTitle = $(this).get(0).id;
                     //alert(selectTitle);
-                    readTextFile(selectTitle.trim());
-                    //getProjectDetailPureJS(selectTitle.trim());
+                    //readTextFile(selectTitle.trim());
+                    getProjectDetailPureJS(selectTitle.trim());
                 });
             });
 
