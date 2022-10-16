@@ -21,7 +21,7 @@
 <body onload="getProjectDetailPureJS('Wicki Search');">
 
 
-    <h2>RolEmi&trade; &spades;  The bushy brow code maker &#x2728; </h2>
+    <h2>TechRolEmi&trade; &spades;  The bushy brow code maker &#x2728; </h2>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
         <a href="#articles">Articles</a>
@@ -72,37 +72,7 @@
   <div id="one-true" class="group">
     <!-- LEFT COLUMN -->
     <div class="col">
-        <div class="tree-menu codechallenge projlist" id="code_challenge">
-            <ul>
-                <li><a href="#challenges" title="Coding challenges">Python</a>
-                    <ul>
-                        <li><a href="./data/codechallenge_001.txt" target="prject-detail" id="codechallenge_001" title="Two numbers in list that add up to k">is Sum Equal K</a></li>
-                        <li><a href="codechallenge_002.py" id="codechallenge_002" title="Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.">Reduce function</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Javascript</a></li>
-                <li><a href="#">BASH</a></li>
-                <li><a href="#">C#</a></li>
-            </ul>
-        </div>
-        <script>
-            $('.codechallenge').ntm();
-            $('#click').click(function() {
-                $('.parent > a').click();
-            });
-
-            $(document).ready(function() {
-                $("a").on("click", function(e) {
-                    e.preventDefault();
-                    let selectTitle = $(this).get(0).id;
-                    //alert(selectTitle);
-                    //readTextFile(selectTitle.trim());
-                    getProjectDetailPureJS(selectTitle.trim());
-                });
-            });
-
-        </script>
-        <ul class="projlist" id="myUL">
+        <!-- <ul class="projlist" id="myUL">
             <li><span class="caret">Fullstack Projects</span>
               <ul class="nested">
                 <li onfocus=" let caretChild='ChartTockMarket'; name='one'; id='chartstockmarket'">Chart the Stock Market</li>
@@ -125,36 +95,18 @@
                 <li>Twitch JSON API</li>
                 <li>Voting App</li>
                 <li>Wiki Search</li>
-                <!-- <li><span class="caret">Tea</span>
-                  <ul class="nested">
-                    <li>Black Tea</li>
-                    <li>White Tea</li>
-                    <li><span class="caret">Green Tea</span>
-                      <ul class="nested">
-                        <li>Sencha</li>
-                        <li>Gyokuro</li>
-                        <li>Matcha</li>
-                        <li>Pi Lo Chun</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li> -->
               </ul>
             </li>
         </ul>
         <script>
             const toggler = document.getElementsByClassName("caret");
-
             for (let i = 0; i < toggler.length; i++) {
                 toggler[i].addEventListener("click", function() {
                     this.parentElement.querySelector(".nested").classList.toggle("active");
                     this.classList.toggle("caret-down");
-                 
                 });
             }
-
-
-            </script>
+        </script> -->
 
         <h3>Mini Projects</h3>
         <ul class="projlist" id="project_list">
