@@ -34,18 +34,18 @@
         "categories": ["Pure javascript", "API", "Wikipedia API", "Search box", "Random button", "Wikipedia API"]
     },
     {
-        "projectTitle": "Local Weather",
-        "projectUrl": "https://codepen.io/hurricanemark/pen/jOmddGx",
+        "projectTitle": "Pinpoint Weather Report",
+        "projectUrl": "https://hurricanemark.github.io/Weather_Report_NodeJS_EJS_Express_WeatherBit_API/",
         "description": "Build a Local Weather Report",
         "objective": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/hurricanemark/pen/jOmddGx.",
         "userStory": ["Use geolocation api to determin longitude and latitude values.",
                         "Handle exceptions."],
         "hints": ["Convert units appropriate to geo location."],
         "note": ["Available in github page: https://hurricanemark.github.io/LocalWeather/"],
-        "demo": "<a href='https://codepen.io/hurricanemark/pen/jOmddGx' target='_blank' title='Live demo on codepen'>Click to run</a>",
+        "demo": "<a href='https://techrolemiweather.cyclic.app/about' target='_blank' title='Live demo'>Click to run</a>",
         "status": "COMPLETED",
         "engineers": ["Mark Nguyen"],
-        "categories": ["pure javascript", "API", "Geolocation API", "Weather API", "XMLHttpRequest"]
+        "categories": ["nodejs", "express", "vanila javascript", "API", "Geolocation API", "Weather API", "XMLHttpRequest"]
     },
     {
         "projectTitle": "Twitch JSON API",
