@@ -36,13 +36,13 @@
     {
         "projectTitle": "Pinpoint Weather Report",
         "projectUrl": "https://hurricanemark.github.io/Weather_Report_NodeJS_EJS_Express_WeatherBit_API/",
-        "description": "Build a Local Weather Report",
-        "objective": "Build a CodePen.io app that is functionally similar to this: https://codepen.io/hurricanemark/pen/jOmddGx.",
+        "description": "Pinpoint Geolocation Weather Report",
+        "objective": "A full-stack, step-by-step development project: An Embedded Javascript (EJS) responsive web app using NodeJS-Express scaffolding to call weather API providers for weather reports.",
         "userStory": ["Use geolocation api to determin longitude and latitude values.",
                         "Handle exceptions."],
         "hints": ["Convert units appropriate to geo location."],
-        "note": ["Available in github page: https://hurricanemark.github.io/LocalWeather/"],
-        "demo": "<a href='https://techrolemiweather.cyclic.app/about' target='_blank' title='Live demo'>Click to run</a>",
+        "note": ["Available in github page: https://hurricanemark.github.io/Weather_Report_NodeJS_EJS_Express_WeatherBit_API/"],
+        "demo": "<a href='https://techrolemiweather.cyclic.app/weatherbit' target='_blank' title='Live demo'>Click to run</a>",
         "status": "COMPLETED",
         "engineers": ["Mark Nguyen"],
         "categories": ["nodejs", "express", "vanila javascript", "API", "Geolocation API", "Weather API", "XMLHttpRequest"]
