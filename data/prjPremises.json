@@ -42,7 +42,7 @@
                         "Handle exceptions."],
         "hints": ["Convert units appropriate to geo location."],
         "note": ["Available in github page: https://hurricanemark.github.io/Weather_Report_NodeJS_EJS_Express_WeatherBit_API/"],
-        "demo": "<a href='https://techrolemiweather.cyclic.app/weatherbit' target='_blank' title='Live demo'>Click to run</a>",
+        "demo": "<a href='https://42.rolemi.com/' target='_blank' title='Live demo'>Click to run</a>",
         "status": "COMPLETED",
         "engineers": ["Mark Nguyen"],
         "categories": ["nodejs", "express", "vanila javascript", "API", "Geolocation API", "Weather API", "XMLHttpRequest"]
