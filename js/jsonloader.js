@@ -41,7 +41,8 @@ function getProfilePureJS() {
         
 // alert(data[0].profile);
 // alert(data[0].history);
-        segmentHTML = '<br \><ul class="dashed"><span style="color:green"><em>' + data[0].profile + '</em></span></ul>&emsp;&emsp; <hr><br \>'
+        segmentHTML = '<br \><ul class="dashed"><span style="color:green"><em> <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="marknltv" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/marknltv?trk=profile-badge">Mark V. Nguyen</a></div><script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>'
+        + '</em></span></ul>&emsp;&emsp; <hr><br \>'
                         + '&emsp; &#8211; History: <br \>' + data[0].history.p1 + '<br \><br \>' +
                         '&emsp; &#8211; Path: <br \>' + data[0].history.p2 + '<br \>' +
                         data[0].history.p2_2 + '<br \><br \>' +
@@ -51,7 +52,7 @@ function getProfilePureJS() {
                         [0].history.p5 + '<br \><br \>' +
                         '&emsp; &#8211; Contributions: <br \>' + data[0].history.p6 + '<br \>' + data[0].history.p7 + '<br \><br \>' +
                         '&emsp; &#8211; Hobbies: <br \>' + data
-                        [0].history.p8 + '<br \><br \>';
+                        [0].history.p8 + '<br \><br \><hr>';
                         
         if (segmentHTML !== "") {
             //alert(segmentHTML);
