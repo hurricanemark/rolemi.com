@@ -20,21 +20,38 @@
 </head> 
 <body onload="getProjectDetailPureJS('Geolocation Weather Report');">
 
-
     <h2>TechRolEmi&trade; &spades;   &#x2728; Trek</h2>
     <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
         <div class="dropdown">
             <button class="dropbtn">Articles<em class="fa fa-caret-down"></em></button>
             <div class="dropdown-content">
+                <span><strong>How-tos</strong><br></span>
+                <a href="https://hurricanemark.github.io/ansible_server_configuration/" target="_blank">Configure Remote Servers Using Ansible</a>
                 <a href="https://hurricanemark.github.io/Weather_Report_NodeJS_EJS_Express_WeatherBit_API/" target="_blank">Geolocation Weather App</a>
+                <a href="https://hurricanemark.github.io/SHA-1-Password-Cracker/" target="_blank">How to Hack SHA-1 Passwords</a>
                 <a href="https://hurricanemark.github.io/Pagination/" target="_blank">Server side Pagination</a>
-                <a href="https://hurricanemark.github.io/SHA-1-Password-Cracker/" target="_blank">How to hack SHA-1 Passwords</a>
+                
+                <a href="https://hurricanemark.github.io/relational_database/" target="_blank">Relational Database Modeling</a>
+                <a href="https://hurricanemark.github.io/DailyCodingChallenge/" target="_blank">Test your Python Skill</a>
+
+                <a href="https://hurricanemark.github.io/TDD-nodejs-mocha-chai-testing/" terget="_blank">Test Driven NodeJS Development</a>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">News<em class="fa fa-caret-down"></em></button>
+            <div class="dropdown-content">
+                <span><strong>Constant Contact Campaigns</strong><br></span>
+                <a href="https://conta.cc/3B0Aow5" target="prject-detail">DNS Vulnerabilities</a>
+                <a href="https://conta.cc/3JRJu0L" target="prject-detail">Air gaps in TCP protocol</a>
+                <a href="https://conta.cc/3iFAWRr" target="prject-detail">The Essential Need of Service Monitoring Level Monitoring</a>
             </div>
         </div>
         <div class="dropdown">
             <button class="dropbtn">Products<em class="fa fa-caret-down"></em></button>
             <div class="dropdown-content">
+                <span><strong>My publicized LLC</strong><br></span>
               <a href="https://new.aesclever.com/cleverview-for-tcp-ip/" target="_blank">CleverView TCPIP</a>
               <a href="https://new.aesclever.com/cleverview-for-tcp-ip-on-linux/" target="_blank">Clever IDS</a>
               <a href="https://new.aesclever.com/cleverdetect-for-dns/" target="_blank">CLEVERDetect DNS</a>
@@ -42,29 +59,42 @@
               <a href="https://new.aesclever.com/cleverview-for-ctrace-analysis/" target="_blank">CleverView cTrace Analysis</a>
             </div>
         </div>
+
         <div class="dropdown">
-            <button class="dropbtn">News<em class="fa fa-caret-down"></em></button>
+            <button class="dropbtn">Profile<em class="fa fa-caret-down"></em></button>
             <div class="dropdown-content">
-                <a href="https://conta.cc/3B0Aow5" target="prject-detail">DNS Vulnerabilities</a>
-                <a href="https://conta.cc/3JRJu0L" target="prject-detail">Air gaps in TCP protocol</a>
+                <hr>
+                <span><strong>About</strong><br></span>
+                <a id="myabout" href="#">Biography</a>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $("a[id*=myabout]").click(function() {
+                            getProfilePureJS();
+                        });
+                    });
+        
+                </script>
+                <hr>                
+                <span><strong>Code</strong><br></span>
+                <a href="https://github.com/hurricanemark" target="_blank" title="redirect to github.com/hurricanemark" >DockerHub</a>
+                <a href="https://hub.docker.com/repositories/marknre" target="_blank" title="redirect to github.com/hurricanemark" >GitHub</a>
+
+                <hr>
+                <span><strong>Certificates</strong><br></span>
+                <div class="dropdown-content">
+                    <a href="https://www.freecodecamp.org/certification/marknltv/relational-database-v8" target="prject-detail" title="redirect to certificate site">Relational Database Modeling</a>
+                    <a href="https://www.freecodecamp.org/certification/marknltv/back-end-development-and-apis" target="prject-detail" title="redirect to certificate site">Back End Development and APIs</a>
+                    <a href="https://www.freecodecamp.org/certification/marknltv/javascript-algorithms-and-data-structures" target="prject-detail" title="redirect to certificate site">JavaScript Algorithms and Data Structures</a>
+
+                    <a href="https://www.freecodecamp.org/certification/marknltv/responsive-web-design" target="prject-detail" title="redirect to certificate site">Responsive Web Design</a>
+                    
+                </div>
             </div>
         </div>
 
-
-
-        <a href="https://github.com/hurricanemark" target="_blank" title="redirect to github.com/hurricanemark" >Profile</a>
-
         <a href="https://tech.rolemi.com" target="_blank" title="redirect to blog at https://tech.rolemi.com">Blog</a>
 
-        <a id="myabout" href="#">About</a>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("a[id*=myabout]").click(function() {
-                    getProfilePureJS();
-                });
-            });
 
-        </script>
 
         <a href="#login" title="comming soon">&emsp;&emsp;&emsp;&emsp;&emsp;Login</a>
         <a href="#register" title="comming soon">Register</a>

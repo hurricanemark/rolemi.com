@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "doc": "docs"
+    "doc": "docs",
+    "data": "data",
+    "static": "static"
   },
   "scripts": {
     "openhtml": "open ./index.html",
